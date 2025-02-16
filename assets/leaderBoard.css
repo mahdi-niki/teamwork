@@ -1,5 +1,9 @@
+
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #2C3639; 
+    color: #F8F9FA; 
 }
 
 header {
@@ -13,17 +17,31 @@ main {
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: #3F4E4F; 
+    color: #DCD7C9; 
 }
 
 th, td {
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #A27B5C; 
 }
 
 th {
-    background-color: #f8f9fa;
+    background-color: #2C3639; 
+    color: #A27B5C; 
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #3F4E4F; 
+}
+
+.btn-primary {
+    background-color: #A27B5C; 
+    border-color: #A27B5C;
+}
+
+.btn-primary:hover {
+    background-color: #8B6B4D;
+    border-color: #8B6B4D; 
 }
