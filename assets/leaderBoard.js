@@ -1,4 +1,19 @@
+const apiUrl = 'https://67b24495bc0165def8cd2771.mockapi.io/users';
 let ascending = true;
+
+async function fetchData() {
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        data.forEach(user => addEntry(user.name, user.score));
+    } catch (error) {
+        console.error('Fetch error:', error);
+    }
+}
+
 function addEntry(name, score) {
     const leaderboardBody = document.getElementById('leaderboard-body');
     const newRow = document.createElement('tr');
@@ -13,6 +28,7 @@ function addEntry(name, score) {
 
     leaderboardBody.appendChild(newRow);
 }
+
 function sortLeaderboard() {
     const leaderboardBody = document.getElementById('leaderboard-body');
     const rows = Array.from(leaderboardBody.querySelectorAll('tr'));
@@ -26,7 +42,7 @@ function sortLeaderboard() {
     rows.forEach(row => leaderboardBody.appendChild(row));
     ascending = !ascending;
 }
-addEntry('Atena', 100);
-addEntry('Mahdi', 95);
-addEntry('Rasa', 93);
+
 document.getElementById('sortButton').addEventListener('click', sortLeaderboard);
+
+fetchData();
