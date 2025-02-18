@@ -1,3 +1,4 @@
+// dont forget to link the css file to your html
 function addHeader() {
     const headerHTML = `
     <header>
