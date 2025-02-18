@@ -260,7 +260,8 @@ submitBtn.addEventListener("click",(e)=>{
   btnHome.addEventListener("click",(e)=>{
 
 
-        window.location.href="../index.html";
+    window.location.href = "../index.html";
+
       })
 
    
