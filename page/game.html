@@ -4,15 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../assets/game.css" />
   </head>
+
   <body>
     <header></header>
 
-    <main></main>
+    <main>
+      <div class="container gameContainer">
+        <h1 fw-bold>Color Code Game</h1>
+
+        <!-- Remaining Guesses  starts -->
+        <div class="timeBar">
+          <span class="navbarBrand"></span>
+          <span class="navbarText"></span>
+        </div>
+
+        <!-- Remaining Guesses  ends -->
+
+        <!-- Select Colors  starts -->
+        <div class="selectColorsTitle">
+          <h3 class="selectText">Select Colors</h3>
+        </div>
+        <div class="colors">
+          <div class="palet1 palet"></div>
+          <div class="palet2 palet"></div>
+          <div class="palet3 palet"></div>
+          <div class="palet4 palet"></div>
+          <div class="palet5 palet"></div>
+          <div class="palet6 palet"></div>
+        </div>
+        <!-- Select Colors  starts -->
+
+        <!-- Guesses starts -->
+        <div class="guessesContainer">
+          <div class="container currentContainer">
+            <span>Your current guess :</span>
+
+            <div class="currentGuesses"></div>
+          </div>
+
+          <button type="button" class="btn submitBtn">Submit Guess</button>
+        </div>
+        <!-- Guesses ends -->
+
+        <!-- guessesHistory starts -->
+        <div class="guessHistoryContainer">
+          <h3>Your Guesses</h3>
+
+          <div class="guessesHistory"></div>
+        </div>
+        <!-- guessesHistory ends -->
+      </div>
+
+      <!-- modal -->
+
+      <div class="modal" id="gameOverModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body">
+              <span class="textJok"></span>
+              <p class="modal-Text"></p>
+              <div class="keyAnswer"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-home">
+                Home
+              </button>
+              <button type="button" class="btn btn-primary btn-playAgain">
+                Play again
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+    </main>
 
     <footer></footer>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="../assets/game.js"></script>
   </body>
 </html>

@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Fredoka:wdth,wght@93.5,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nosifer&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:#F5EFE6;
+    font-family: "Afacad Flux", serif;
+}
+
+
+
+
+.gameContainer{
+
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    margin-top: 40px;
+    background-color:#E8DFCA;
+     min-height: 500px;
+     width: 50%;
+     color: #2C3639;
+     border-radius: 15px;
+
+
+}
+
+
+.gameContainer h1{
+    text-shadow: -5px 5px 0px #e961c7, -10px 10px 0px #01cccc, -15px 15px 0px #ffa32b;
+}
+
+
+
+
+
+.timeBar{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+width: 100%;
+border-radius: 15px;
+background-color:#aebdcac0;
+padding: 6px;
+color: #2C3639;
+border:#7895B2 solid 1px;
+}
+
+
+
+
+
+.colors{
+min-height: 50px;
+width: 100%;
+  
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+
+
+.guessesContainer{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+
+.currentContainer{
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+}
+
+.currentGuesses{
+min-height: 40px;
+width:600px;
+
+display: flex;
+justify-content:flex-start;
+align-items:center;
+flex-direction: row;
+gap: 15px;
+    margin-left: 10px;
+}
+
+
+
+.btn{
+
+    background-color:#aebdcac0;
+
+    color: #2C3639;
+    border:#7895B2 solid 1px;
+}
+
+.btn:hover{
+
+
+    background-color:#a27b5c17;
+    color: #2C3639;
+border: #A27B5C solid 1px;
+}
+
+
+
+
+
+
+.guessHistoryContainer{
+
+ 
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+   
+}
+
+.gussInnerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.guessesHistory{
+    padding: 6px;
+    background-color:#aebdcac0;
+    color: #2C3639;
+    border:#7895B2 solid 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    min-height: 20px;
+  gap: 20px;
+
+}
+
+
+
+
+
+.palet{
+     border-radius: 50%;
+    width:30px;
+    height: 30px;
+}
+
+.palet:hover{
+
+    filter: brightness(0.7);
+}
+
+
+
+.palet1{
+    background-color: red;
+}
+.palet2{
+    background-color: green;
+}
+.palet3{
+    background-color: blue;
+}
+.palet4{
+    background-color: yellow;
+}
+.palet5{
+    background-color: orange;
+}
+.palet6{
+    background-color: purple;
+}
+
+
+.modal-body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.keyAnswer{
+
+   
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+ gap: 15px;
+   
+ 
+}
+
+.selectedColor{
+border-radius: 50%;
+
+}
+
+
+.selectedColor:hover{
+
+    filter: brightness(0.7);
+}
+
+
+
+.modal-content{
+    background-color: #F5EFE6;
+} 
+
+.modal-title{
+  color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 2px 0px rgba(64, 116, 181, 1), 
+    2px -2px 0px rgba(64, 116, 181, 1), 
+    -2px 2px 0px rgba(64, 116, 181, 1), 
+    -2px -2px 0px rgba(64, 116, 181, 1), 
+    2px 0px 0px rgba(64, 116, 181, 1), 
+    0px 2px 0px rgba(64, 116, 181, 1), 
+    -2px 0px 0px rgba(64, 116, 181, 1), 
+    0px -2px 0px rgba(64, 116, 181, 1);
+}
+
+
+
+
+
+
+ .showColors{
+    min-height: 40px;
+    width:600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+}
+
+
+.showText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+  
+    width:300px;
+    margin-right: 5px;
+}
+
+
+ 
+
+
+
+
+
+
+
