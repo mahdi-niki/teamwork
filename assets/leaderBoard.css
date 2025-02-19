@@ -1,0 +1,47 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7895B2; 
+    color: #F5EFE6; 
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #AEBDCA; 
+    color: #DCD7C9; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #AEBDCA; 
+}
+
+th {
+    background-color: #7895B2; 
+    color: #AEBDCA; 
+}
+
+tr:nth-child(even) {
+    background-color: #AEBDCA; 
+}
+
+.btn-primary {
+    background-color: #AEBDCA; 
+    border-color: #AEBDCA;
+}
+
+.btn-primary:hover {
+    background-color: #8B6B4D;
+    border-color: #8B6B4D; 
+}

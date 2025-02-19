@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Ali Rezaei",
+        "username": "alirezaei",
+        "password": "ali123",
+        "score": 450
+    },
+    {
+        "id": 2,
+        "name": "Sara Mohammadi",
+        "username": "saramoh",
+        "password": "sara456",
+        "score": 780
+    },
+    {
+        "id": 3,
+        "name": "Mohammad Ahmadi",
+        "username": "mahmadi",
+        "password": "moh789",
+        "score": 320
+    },
+    {
+        "id": 4,
+        "name": "Fatemeh Karimi",
+        "username": "fatkar",
+        "password": "fatemeh123",
+        "score": 600
+    },
+    {
+        "id": 5,
+        "name": "Hossein Alizadeh",
+        "username": "hosaliz",
+        "password": "hossein456",
+        "score": 900
+    },
+    {
+        "id": 6,
+        "name": "Zahra Eslami",
+        "username": "zahraes",
+        "password": "zahra789",
+        "score": 550
+    },
+    {
+        "id": 7,
+        "name": "Reza Moradi",
+        "username": "rezamor",
+        "password": "reza123",
+        "score": 700
+    },
+    {
+        "id": 8,
+        "name": "Narges Rahimi",
+        "username": "nargesr",
+        "password": "narges456",
+        "score": 400
+    },
+    {
+        "id": 9,
+        "name": "Amir Hosseini",
+        "username": "amirhos",
+        "password": "amir789",
+        "score": 850
+    },
+    {
+        "id": 10,
+        "name": "Leila Gholami",
+        "username": "leilagh",
+        "password": "leila123",
+        "score": 300
+    }
+]
