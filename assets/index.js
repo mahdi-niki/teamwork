@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //---------------     fake join   --------------//
 
-// function simulateSignup() {
-//     localStorage.setItem("isRegistered", "true");
-//     alert("You are welcome to join us");
-//     location.reload();
-//     }
+function simulateSignup() {
+    localStorage.setItem("isRegistered", "true");
+    alert("You are welcome to join us");
+    location.reload();
+    }
 //     simulateSignup()
