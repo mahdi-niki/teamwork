@@ -284,5 +284,481 @@ border-radius: 50%;
 
 
 
+@media (max-width: 768px) {
 
 
+
+    .gameContainer{
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      margin-top: 40px;
+      background-color:#E8DFCA;
+       min-height: 500px;
+       width:95%;
+       color: #2C3639;
+       border-radius: 15px;
+  
+  
+  }
+  
+  
+  .gameContainer h1{
+      text-shadow: -5px 5px 0px #e961c7, -10px 10px 0px #01cccc, -15px 15px 0px #ffa32b;
+  }
+  
+  
+  
+  
+  
+  .timeBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 15px;
+  background-color:#aebdcac0;
+  padding: 6px;
+  color: #2C3639;
+  border:#7895B2 solid 1px;
+  }
+  
+  
+  
+  
+  
+  .colors{
+  min-height: 50px;
+  width: 100%;
+    
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      gap:10px;
+  }
+  
+  
+  .guessesContainer{
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      gap: 20px;
+  }
+  
+  
+  .currentContainer{
+  
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction: column;
+  }
+  
+  .currentGuesses{
+  min-height: 40px;
+  width:100%;
+  
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+      margin-left: 10px;
+  }
+  
+  
+  
+  .btn{
+  
+      background-color:#aebdcac0;
+  
+      color: #2C3639;
+      border:#7895B2 solid 1px;
+  }
+  
+  .btn:hover{
+  
+  
+      background-color:#a27b5c17;
+      color: #2C3639;
+  border: #A27B5C solid 1px;
+  }
+  
+  
+  
+  
+  
+  
+  .guessHistoryContainer{
+  
+   
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+     
+  }
+  
+  .gussInnerContainer{
+      width: 90%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    
+  
+  }
+  
+  .guessesHistory{
+      padding: 6px;
+      background-color:#aebdcac0;
+      color: #2C3639;
+      border:#7895B2 solid 1px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      border-radius: 15px;
+      min-height: 20px;
+    gap: 10px;
+    
+  
+  }
+  
+  
+  
+  
+  
+  .palet{
+       border-radius: 50%;
+      width:30px;
+      height: 30px;
+  }
+  
+  .palet:hover{
+  
+      filter: brightness(0.7);
+  }
+  
+  
+  
+  .palet1{
+      background-color: red;
+  }
+  .palet2{
+      background-color: green;
+  }
+  .palet3{
+      background-color: blue;
+  }
+  .palet4{
+      background-color: yellow;
+  }
+  .palet5{
+      background-color: orange;
+  }
+  .palet6{
+      background-color: purple;
+  }
+  
+  
+  .modal-body{
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .keyAnswer{
+  
+     
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: center;
+   gap: 15px;
+     
+   
+  }
+  
+  .selectedColor{
+  border-radius: 50%;
+  
+  }
+  
+  
+  .selectedColor:hover{
+  
+      filter: brightness(0.7);
+  }
+  
+  
+  
+  .modal-content{
+      background-color: #F5EFE6;
+  } 
+  
+  .modal-title{
+    color: rgba(255, 255, 255, 1);
+      text-shadow: 2px 2px 0px rgba(64, 116, 181, 1), 
+      2px -2px 0px rgba(64, 116, 181, 1), 
+      -2px 2px 0px rgba(64, 116, 181, 1), 
+      -2px -2px 0px rgba(64, 116, 181, 1), 
+      2px 0px 0px rgba(64, 116, 181, 1), 
+      0px 2px 0px rgba(64, 116, 181, 1), 
+      -2px 0px 0px rgba(64, 116, 181, 1), 
+      0px -2px 0px rgba(64, 116, 181, 1);
+  }
+  
+  
+  
+  
+  
+  
+   .showColors{
+      min-height: 40px;
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+  }
+  
+  
+  .showText{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-between;
+    
+      width:100%;
+      margin-right: 0;
+  }
+  
+  
+
+  .selectedColor{
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    
+  }
+
+.gussedColors{
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+
+
+}
+
+}
+
+@media (max-width: 810px) {
+   
+
+    .gameContainer{
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      margin-top: 40px;
+      background-color:#E8DFCA;
+       min-height: 500px;
+       width:95%;
+       color: #2C3639;
+       border-radius: 15px;
+  
+  
+  }
+  
+  
+  
+  .colors{
+  min-height: 50px;
+  width: 100%;
+    
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      gap:10px;
+  }
+  
+  
+  .guessesContainer{
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      gap: 20px;
+  }
+  
+  
+  .currentContainer{
+  
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction: column;
+  }
+  
+  .currentGuesses{
+  min-height: 40px;
+  width:100%;
+  
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+      margin-left: 10px;
+  }
+  
+  
+  
+  .guessHistoryContainer{
+  
+   
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+     
+  }
+  
+  .gussInnerContainer{
+      width: 90%;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    
+  
+  }
+  
+  .guessesHistory{
+      padding: 6px;
+      background-color:#aebdcac0;
+      color: #2C3639;
+      border:#7895B2 solid 1px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      border-radius: 15px;
+      min-height: 20px;
+    gap: 10px;
+    
+  
+  }
+  
+  
+  
+  
+  
+  .palet{
+       border-radius: 50%;
+      width:30px;
+      height: 30px;
+  }
+  
+
+  
+  
+  
+  
+  
+  .modal-body{
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .keyAnswer{
+  
+     
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: center;
+   gap: 15px;
+     
+   
+  }
+  
+  .selectedColor{
+  border-radius: 50%;
+  
+  }
+  
+  
+
+  
+   .showColors{
+      min-height: 40px;
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+  }
+  
+  
+  .showText{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:space-between;
+    
+      width:100%;
+      margin-right: 0;
+  }
+  
+  
+
+  .selectedColor{
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    
+  }
+
+.gussedColors{
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+
+
+} 
+
+
+
+    }

@@ -109,6 +109,7 @@ function easy(){
    
     timer=300;
     let password=[];
+   console.log(password);
    
     // creat the password
        let passwordLength=6;
