@@ -23,7 +23,9 @@ hard.addEventListener("click", () => {
   hard.style.transform = "scale(1.1)";
 });
 start.addEventListener("click", () => {
-  if (start.disabled) return;
+  if (start.disabled){
+    return alert("Please Sign Up First");
+  } ;
   
   if (easy.style.transform === "scale(1.1)") {
     window.location.href = `./page/game.html?level=${encodeURIComponent("Easy (6 colors)")}`;
@@ -31,6 +33,8 @@ start.addEventListener("click", () => {
     window.location.href = `./page/game.html?level=${encodeURIComponent("Medium (8 colors)")}`;
   } else if (hard.style.transform === "scale(1.1)") {
     window.location.href = `./page/game.html?level=${encodeURIComponent("Hard (10 colors)")}`;
+  }else{
+    alert("Please select a level 🥱");
   }
 });
 
@@ -52,7 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function simulateSignup() {
     localStorage.setItem("isRegistered", "true");
-    alert("You are welcome to join us");
+    alert("i know its fake😉 but welcome to join us😅");
     location.reload();
     }
-//     simulateSignup()
+    const joinBtn = document.querySelector(".fakejoin");
+    joinBtn.addEventListener("click", simulateSignup);
+
