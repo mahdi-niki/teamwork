@@ -24,13 +24,13 @@ hard.addEventListener("click", () => {
 });
 start.addEventListener("click", () => {
   if (start.disabled) return;
-
+  
   if (easy.style.transform === "scale(1.1)") {
-    window.location.href = "for atena";
+    window.location.href = `./page/game.html?level=${encodeURIComponent("Easy (6 colors)")}`;
   } else if (normal.style.transform === "scale(1.1)") {
-    window.location.href = "for atena";
+    window.location.href = `./page/game.html?level=${encodeURIComponent("Medium (8 colors)")}`;
   } else if (hard.style.transform === "scale(1.1)") {
-    window.location.href = "for atena";
+    window.location.href = `./page/game.html?level=${encodeURIComponent("Hard (10 colors)")}`;
   }
 });
 
