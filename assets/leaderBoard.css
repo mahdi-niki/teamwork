@@ -1,7 +1,5 @@
-
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #7895B2; 
     color: #F5EFE6; 
 }
@@ -24,24 +22,44 @@ table {
 th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #AEBDCA; 
+    border-bottom: 1px solid #DCD7C9; 
 }
 
 th {
-    background-color: #7895B2; 
-    color: #AEBDCA; 
+    background-color: #6C7A89; 
+    color: #F5EFE6; 
 }
 
 tr:nth-child(even) {
+    background-color: #95A5A6; 
+}
+
+tr:nth-child(odd) {
     background-color: #AEBDCA; 
 }
 
 .btn-primary {
-    background-color: #AEBDCA; 
-    border-color: #AEBDCA;
+    background-color: #8E44AD; 
+    border-color: #8E44AD;
 }
 
 .btn-primary:hover {
-    background-color: #8B6B4D;
-    border-color: #8B6B4D; 
+    background-color: #7D3C98; 
+    border-color: #7D3C98; 
+}
+
+.btn-secondary {
+    background-color: #34495E; 
+    border-color: #34495E;
+}
+
+.btn-secondary:hover {
+    background-color: #2C3E50; 
+    border-color: #2C3E50;
+}
+
+.bottom-right-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }

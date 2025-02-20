@@ -44,5 +44,8 @@ function sortLeaderboard() {
 }
 
 document.getElementById('sortButton').addEventListener('click', sortLeaderboard);
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
 
 fetchData();
